@@ -1,3 +1,43 @@
-h1 {
-  color: blue;
+// FONTS //
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto&display=swap');
+
+// HEADER //
+$header-height: 3rem;
+
+// COLORS //
+$title-color: #0b0a0a;
+$text-color: #403a3a;
+$text-color-light: #707070;
+$container-color: #fafafa;
+$container-color-alt: #f0efef;
+$body-color: #fcfcfc;
+
+// FONTS //
+$body-font: 'Poppins', sans-serif;
+$h1-font-size: 1.5rem;
+$h2-font-size: 1.25rem;
+$h3-font-size: 1rem;
+$normal-font-size: 0.938rem;
+$small-font-size: 0.875rem;
+$smaller-font-size: 0.813rem;
+
+// FONT WEIGHT //
+$font-medium: 500;
+$font-semi-bold: 600;
+
+// MARGIN //
+$mb-1: .5rem;
+$mb-2: 1rem;
+$mb-3: 1.5rem;
+
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 0 $header-height 0;
 }
