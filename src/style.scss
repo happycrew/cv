@@ -125,7 +125,7 @@ img {
 .nav__menu {
   @media screen and (max-width: 968px) {
     position: fixed;
-    bottom: $header-height;
+    bottom: -100%;
     left: 0;
     width: 100%;
     padding: 2rem 1.5rem;
@@ -135,6 +135,10 @@ img {
     z-index: 100;
     transition: 0.3s;
   }
+}
+
+.show-menu {
+  bottom: $header-height;
 }
 
 .nav__logo,
@@ -169,3 +173,98 @@ img {
     color: $title-color;
   }
 }
+
+.active-link {
+  color: $title-color;
+}
+
+.nav__icon {
+  font-size: 1.2rem;
+  margin-bottom: $mb-1;
+}
+
+.home {
+  position: relative;
+}
+
+.home__container {
+  gap: 3rem;
+}
+
+.home__data {
+  gap: 0.5rem;
+  text-align: center;
+}
+
+.home__img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  justify-self: center;
+  margin-bottom: $mb-1;
+}
+
+.home__title {
+  font-size: $h1-font-size;
+}
+
+.home__profession {
+  font-size: $normal-font-size;
+  margin-bottom: $mb-1;
+}
+
+.home__address {
+  gap: 1rem;
+}
+
+.home__information {
+  display: flex;
+  align-items: center;
+  font-size: $small-font-size;
+}
+
+.home__icon {
+  font-size: 1.2rem;
+  margin-right: 0.25rem;
+}
+
+.home__button-movil {
+  display: inline-block;
+  border: 2px solid $text-color;
+  color: $title-color;
+  padding: 1rem 2rem;
+  border-radius: 0.25rem;
+  transition: 0.3s;
+  font-weight: $font-medium;
+  margin-top: $mb-3;
+
+  &:hover {
+    background-color: $text-color;
+    color: $container-color;
+  }
+}
+
+.social__container {
+  grid-template-columns: max-content;
+  gap: 1rem;
+}
+
+.social__link {
+  display: inline-flex;
+  align-items: center;
+  font-size: $small-font-size;
+  color: $text-color;
+  &:hover {
+    color: $title-color;
+  }
+}
+
+.social__icon {
+  font-size: 1.2rem;
+  margin-right: 0.3rem;
+}
+
+.profile__description {
+  text-align: center;
+}
+

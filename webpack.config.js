@@ -7,10 +7,21 @@ const baseConfig = {
   entry: {
     main: path.resolve(__dirname, './src/script.ts'),
   },
+  output: {
+    filename: 'script.js',
+    path: path.resolve(__dirname, './dist'),
+  },
   mode: 'development',
   module: {
     rules: [
       { test: /\.ts$/i, use: 'ts-loader' },
+      {
+        test: /\.(png|mp3|svg|jpg|jpeg|gif|webp)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: '/assets/[name][ext]',
+        },
+      },
       {
         test: /\.(s*)css$/,
         use: ['style-loader', 'css-loader', 'sass-loader'],
@@ -19,10 +30,6 @@ const baseConfig = {
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
-  },
-  output: {
-    filename: 'script.js',
-    path: path.resolve(__dirname, './dist'),
   },
   plugins: [
     new HtmlWebpackPlugin({
