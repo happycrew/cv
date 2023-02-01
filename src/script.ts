@@ -75,7 +75,9 @@ const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx-moo
 if (selectedTheme) {
   document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme);
   themeButton.classList[selectedTheme === 'bx-moon' ? 'add' : 'remove'](iconTheme);
-  (selectedTheme === 'dark') ? document.documentElement.setAttribute('theme', 'dark') : document.documentElement.setAttribute('theme', 'light');
+  (selectedTheme === 'dark') 
+  ? document.documentElement.setAttribute('theme', 'dark') 
+  : document.documentElement.setAttribute('theme', 'light');
 }
 
 themeButton.addEventListener('click', () => {
@@ -85,7 +87,6 @@ themeButton.addEventListener('click', () => {
   } else {
     document.documentElement.setAttribute('theme', 'dark');
   }
-  document.body.classList.toggle(darkTheme);
   themeButton.classList.toggle(iconTheme);
   localStorage.setItem('selected-theme', getCurrentTheme());
   localStorage.setItem('selected-icon', getCurrentIcon());
