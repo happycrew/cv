@@ -77,6 +77,88 @@ html {
   scroll-behavior: smooth;
 }
 
+.scale-cv {
+  .change-theme,
+  .generate-pdf {
+    display: none;
+  }
+
+  .bd-container {
+    max-width: 595px;
+  }
+
+  .section {
+    padding: 1.5rem 0 0.80rem;
+  }
+
+  .section-title {
+    margin-bottom: 0.75rem;
+  }
+
+  .resume__left,
+  .resume__right {
+    padding: 0 1rem;
+  }
+
+  .home__img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .home__container {
+    gap: 1.5rem;
+  }
+
+  .home__data {
+    gap: 0.25rem;
+  }
+
+  .home__address,
+  .social__container {
+    gap: 0.75rem;
+  }
+
+  .home__icon,
+  .social__icon {
+    font-size: 1rem;
+  }
+
+  .education__container,
+  .experience__container {
+    gap: 1rem;
+  }
+
+  .education__time,
+  .experience__time {
+    padding-right: 0.5rem;
+  }
+
+  .education__rounder,
+  .experience__rounder {
+    width: 11px;
+    height: 11px;
+    margin-top: 0.22rem;
+  }
+
+  .education__line,
+  .experience__line {
+    width: 1px;
+    height: 110%;
+    transform: translate(5px, 0);
+  }
+
+  .education__data,
+  .experience__data {
+    gap: 0.25rem;
+  }
+
+  .skills__name {
+    margin-bottom: $mb-1;
+  }
+
+}
+
+
 body {
   margin: 0 0 $header-height 0;
   padding: 0;
@@ -86,12 +168,12 @@ body {
   color: var(--text-color);
 
   .scale-cv {
-    --h1-font-size: 1.5rem;
-    --h2-font-size: 1.25rem;
-    --h3-font-size: 1rem;
-    --normal-font-size: 0.938rem;
-    --small-font-size: 0.875rem;
-    --smaller-font-size: 0.813rem;
+    --h1-font-size: 0.938rem;
+    --h2-font-size: 0.938rem;
+    --h3-font-size: 0.875rem;
+    --normal-font-size: 0.813rem;
+    --small-font-size: 0.75rem;
+    --smaller-font-size: 0.688rem;
   }
 }
 

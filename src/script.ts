@@ -26,29 +26,6 @@ const linkAction = (): void => {
 
 navLink.forEach(el => el.addEventListener('click', linkAction));
 
-// Scroll sections active link //
-
-// const sections = document.querySelectorAll('section[id]');
-// console.log(sections, 'sections');
-// const scrollActive = () => {
-//   const scrollY = window.pageYOffset;
-
-//   sections.forEach(el => {
-//     console.log(el, 'el');
-//     const sectionHeight = (el as HTMLElement).offsetHeight;
-//     const sectionTop = (el as HTMLElement).offsetTop - 50;
-//     const sectionId = el.getAttribute('id') as string;
-
-//     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-//       (document.querySelector('nav__menu a[href*=' + sectionId + ']') as HTMLElement).classList.add('active-link');
-//     } else {
-//       (document.querySelector('nav__menu a[href*=' + sectionId + ']') as HTMLElement).classList.remove('active-link');
-//     }
-//   })
-// }
-
-// window.addEventListener('scroll', scrollActive);
-
 // Show scroll top //
 const scrollTop = () => {
   const scrollTop = document.getElementById('scroll-top') as HTMLElement;
@@ -91,3 +68,5 @@ themeButton.addEventListener('click', () => {
   localStorage.setItem('selected-theme', getCurrentTheme());
   localStorage.setItem('selected-icon', getCurrentIcon());
 })
+
+
