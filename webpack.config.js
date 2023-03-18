@@ -19,7 +19,7 @@ const baseConfig = {
         test: /\.(png|mp3|svg|jpg|jpeg|gif|webp)$/i,
         type: 'asset/resource',
         generator: {
-          filename: './assets/[name][ext]',
+          filename: 'assets/[name][ext]',
         },
       },
       {
