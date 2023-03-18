@@ -59,6 +59,10 @@ $mb-3: 1.5rem;
   box-sizing: border-box;
 }
 
+.bx-up-arrow::before {
+  color: white;
+}
+
 .generate-pdf {
   display: none;
   position: absolute;
@@ -88,7 +92,7 @@ html {
   }
 
   .section {
-    padding: 1.5rem 0 0.80rem;
+    padding: 1.5rem 0 0.8rem;
   }
 
   .section-title {
@@ -155,9 +159,7 @@ html {
   .skills__name {
     margin-bottom: $mb-1;
   }
-
 }
-
 
 body {
   margin: 0 0 $header-height 0;
@@ -450,6 +452,10 @@ img {
   font-size: $h3-font-size;
 }
 
+.experience__title:hover {
+  color: darken($color: #ded4d4, $amount: 10%);
+}
+
 .education__studies,
 .experience__company {
   font-size: $small-font-size;
@@ -570,4 +576,13 @@ img {
   .generate-pdf {
     display: inline-block;
   }
+}
+
+.api-link {
+  text-decoration: none;
+  color: var(--title-color);
+}
+
+.api-link:hover {
+  color: rgb(229, 206, 191);
 }
