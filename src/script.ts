@@ -58,14 +58,14 @@ if (selectedTheme) {
 }
 
 themeButton.addEventListener('click', () => {
-  if (document.documentElement.getAttribute('theme') == 'dark') {
-    console.log('ye')
+  if (document.documentElement.getAttribute('theme') === 'dark') {
     document.documentElement.setAttribute('theme', 'light');
+    localStorage.setItem('selected-theme', 'light')
   } else {
     document.documentElement.setAttribute('theme', 'dark');
+    localStorage.setItem('selected-theme', 'dark')
   }
   themeButton.classList.toggle(iconTheme);
-  localStorage.setItem('selected-theme', getCurrentTheme());
   localStorage.setItem('selected-icon', getCurrentIcon());
 })
 
